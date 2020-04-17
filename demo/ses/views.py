@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from datetime import date
 
 # Create your views here.
 from django.utils.decorators import method_decorator
@@ -61,5 +62,7 @@ class Rview(FoMixin1, FoMixin2, View):
     def post(self, request):
         print("我是POST方法")
         return  HttpResponse("我是POST方法")
+
+
 
 

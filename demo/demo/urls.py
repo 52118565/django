@@ -22,4 +22,5 @@ urlpatterns = [
     path(r'', include('resp.urls')),
     path(r'cok/', include('cok.urls')),
     path(r'', include('ses.urls')),
+    path(r'', include('mode.urls')),
 ]

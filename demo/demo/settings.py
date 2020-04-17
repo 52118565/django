@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'resp',
     'cok',
     'ses',
+    'mode',
 ]
 
 MIDDLEWARE = [
