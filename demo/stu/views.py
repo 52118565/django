@@ -42,3 +42,15 @@ def request4(request):
     print(a)
     print(b)
     return HttpResponse("我是Json请求方式")
+
+
+def head(request):
+    print(request.META["CONTENT_TYPE"])
+    print(request.META["CONTENT_LENGTH"])
+    print(request.META["HTTP_HOST"])
+    print(request.method)
+    print(request.user)
+    print(request.path)
+    print(request.encoding)
+    print(request.FILES)
+    return HttpResponse("请求头调用")
